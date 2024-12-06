@@ -1,1 +1,7 @@
+# Ignore the sandbox folder - this is used for code snippets to work on outside of effecting main amendments
+
 sandbox/
+
+# Ignore the my_projects folder as this may have private keys in for created bots or APi Keys
+
+my_projects/
