@@ -3,7 +3,6 @@
 This study guide provides a quick-reference summary of what you learned in this lesson and serves as a guide for the upcoming practice quiz.  
 
 In the Conditionals segment, you learned about the built-in Python operators used for comparing values and the logical operators for making complex comparisons. You also learned how to use operators in if-elif-else blocks. 
-
  
 ## Knowledge
 
@@ -46,7 +45,7 @@ Image containing the unicode value of each letter of the alphabet
 
 https://docs.hexagonppm.com/r/en-US/Full-Text-Retrieval-FTR-Help/Version-2012-R1-SP5-3.6.6/97693
 
- The Unicode numbering for the alphabet starts at 65 for capital letter A and runs to 90 for capital letter Z. Then, the lowercase alphabet values start at 97 for lowercase a and run to 122 for lowercase z. Using these Unicode numbers, capital A's code is less than the codes of all other letters, which Python interprets as the beginning of the alphabet. Lowercase z's code is greater than the codes of all other letters, which Python interprets as the ultimate end of the English alphabet.
+The Unicode numbering for the alphabet starts at 65 for capital letter A and runs to 90 for capital letter Z. Then, the lowercase alphabet values start at 97 for lowercase a and run to 122 for lowercase z. Using these Unicode numbers, capital A's code is less than the codes of all other letters, which Python interprets as the beginning of the alphabet. Lowercase z's code is greater than the codes of all other letters, which Python interprets as the ultimate end of the English alphabet.
 
 ## Logical operators
 
@@ -71,7 +70,6 @@ Logical operators are used to combine comparison expressions and also return Boo
         - Returns a True result if comparison1 is false. 
 
         - If comparison1 is true, then returns False.
-
  
 ## Syntax of an if-elif-else block
 ```Python
@@ -93,7 +91,6 @@ else:
 - If neither condition1 nor condition2 are True:
 
     - Then perform action3 and exit if-elif-else block
-
  
 ## Coding skills
 
@@ -105,7 +102,6 @@ Skill Group 1
 # The value of 10*4 (40) is greater than 14+23 (37), therefore this 
 # comparison expression will return the Boolean value of True.
 
-
 print(10*4 > 14+23) # Should print True
 
 # The letter "t" has a Unicode value of 116 and the letter "s" has a
@@ -115,7 +111,6 @@ print(10*4 > 14+23) # Should print True
 print("tall" < "short")  # Should print False
 ```
   
-
 Skill Group 2
 - Use a function with the def() keyword
 
@@ -224,7 +219,6 @@ else:
 # Expected output is: 
 # The number is less than 32 and greater than 6.
 ```
-  
 
 Skill Group 4
 
