@@ -1,8 +1,4 @@
-# Your grade: 100%
-
-# Your latest: 100%
-
-# Your highest: 100%
+Your grade: 100%
 
 ## Question 1
 
