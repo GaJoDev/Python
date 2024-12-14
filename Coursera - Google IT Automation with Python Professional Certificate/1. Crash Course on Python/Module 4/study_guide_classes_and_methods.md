@@ -43,8 +43,7 @@ def my_function(x):
     Sample usage:
     >>> my_function(“example input”)
     "example output"
-    """
-    
+    """ 
 ```
 When in an interactive Python section, you can display `docstrings` with:
 ```Python
