@@ -1,8 +1,8 @@
-**Your grade:**
+**Your grade: 80**
 
-**Your latest:**
+**Your latest: 80**
 
-**Your highest:**
+**Your highest: 80**
 
 ## Question 1
 
@@ -11,11 +11,11 @@ The email_list function receives a dictionary, which contains domain names as ke
 __Problem__
 ```Python
 def email_list(domains):
-	emails = []
-	for ___:
-	  for user in users:
-	    emails.___
-	return(emails)
+    emails = []
+    for ___:
+      for user in users:
+        emails.___
+    return(emails)
 
 print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))
 ```
@@ -81,20 +81,31 @@ The groups_per_user function receives a dictionary, which contains group names w
 
 ```Python
 def groups_per_user(group_dictionary):
-	user_groups = {}
-	# Go through group_dictionary
-	for ___:
-		# Now go through the users in the group
-		for ___:
-			# Now add the group to the the list of
-# groups for this user, creating the entry
-# in the dictionary if necessary
+    user_groups = {}
+    # Go through group_dictionary
+    for group_name, groups in group_dictionary.items():
+        # Now add the group to the the list of
+        # # groups for this user, creating the entry
+        # # in the dictionary if necessary
+        
+        # Now go through the users in the group
+        for user in groups:
+        # Now add the group to the the list of
+        # # groups for this user, creating the entry
+        # # in the dictionary if necessary
+                if user in user_groups:
+                     user_groups[user].append(group_name)
+                else:
+                     user_groups[user] = [group_name]
 
-	return(user_groups)
+    return(user_groups)
 
-print(groups_per_user({"local": ["admin", "userA"],
-		"public":  ["admin", "userB"],
-		"administrator": ["admin"] }))
+print(groups_per_user(
+    {
+        "local":["admin", "userA"],
+        "public":["admin", "userB"],
+        "administrator":["admin"]
+    }))
 ```
 1 point
 
@@ -112,23 +123,23 @@ wardrobe.update(new_items)
 
 [ ] `{'shirt': ['red', 'blue', 'white'], 'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}`
 
-[ ] `{'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black', 'white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}`
+[x] `{'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black', 'white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}`
 
-[ ] `{'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black'], 'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}`
+[] `{'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black'], 'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}`
 
 1 point
 
 ## Question 4
 
- What’s a major advantage of using dictionaries over lists?
+What’s a major advantage of using dictionaries over lists?
 
-  [ ] *Dictionaries are ordered sets*
+[ ] *Dictionaries are ordered sets*
 
-  [ ] *Dictionaries can be accessed by the index number of the element*
+[ ] *Dictionaries can be accessed by the index number of the element*
 
-  [ ] *Elements can be removed and inserted into dictionaries*
+[ ] *Elements can be removed and inserted into dictionaries*
 
-  [x] **It’s quicker and easier to find a specific element in a dictionary**
+[x] **It’s quicker and easier to find a specific element in a dictionary**
 5.
 
 1 point
@@ -136,22 +147,44 @@ wardrobe.update(new_items)
 ## Question 5
 
 The add_prices function returns the total price of all of the groceries in the  dictionary. Fill in the blanks to complete this function.
+
+Problem
 ```Python
 def add_prices(basket):
-	# Initialize the variable that will be used for the calculation
-	total = 0
-	# Iterate through the dictionary items
-	for ___:
-		# Add each price to the total calculation
-		# Hint: how do you access the values of
-		# dictionary items?
-		total += ___
-	# Limit the return value to 2 decimal places
-	return round(total, 2)  
+    # Initialize the variable that will be used for the calculation
+    total = 0
+    # Iterate through the dictionary items
+    for ___:
+        # Add each price to the total calculation
+        # Hint: how do you access the values of
+        # dictionary items?
+        total += ___
+    # Limit the return value to 2 decimal places
+    return round(total, 2)  
 
 groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59, 
-	"coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}
+    "coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}
 
 print(add_prices(groceries)) # Should print 28.44
 ```
+Solution
+```Python
+def add_prices(basket):
+    # Initialize the variable that will be used for the calculation
+    total = 0
+    # Iterate through the dictionary items
+    for basket,  item in basket.items():
+        # Add each price to the total calculation
+        # Hint: how do you access the values of
+        # dictionary items?
+        total += item
+    # Limit the return value to 2 decimal places
+    return round(total, 2)  
+
+groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59, "coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}
+
+print(add_prices(groceries)) # Should print 28.44
+```
+
+
 1 point
