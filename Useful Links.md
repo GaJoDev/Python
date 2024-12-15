@@ -1,3 +1,3 @@
-https://www.markdownguide.org/basic-syntax/
+Markdown Link creator: [Description Here](emails@and.links.go.here)
 
-My favorite search engine is [Mark Down Basic Syntax](https://www.markdownguide.org/basic-syntax/).
+[Mark Down Basic Syntax](https://www.markdownguide.org/basic-syntax/).
