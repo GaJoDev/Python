@@ -1,5 +1,5 @@
 ## Cheat Sheets
-[Comprehensive Python Cheatsheet](https://github.com/GaJoDev/Python/blob/main/python_cheat_sheet.md){:target="_blank"}
+[Comprehensive Python Cheatsheet](https://github.com/GaJoDev/Python/blob/main/python_cheat_sheet.md)
 
 [Beginners Python Cheatsheet(PDF)](https://github.com/ehmatthes/pcc_3e/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc.pdf)
 
