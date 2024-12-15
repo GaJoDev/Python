@@ -1,4 +1,4 @@
-Full credit got to [gto76](https://github.com/gto76/python-cheatsheet/tree/main?tab=readme-ov-file#sortable) This is the result of their work entirely. Localised copy for reference.
+Full credit goes to [gto76](https://github.com/gto76/python-cheatsheet/tree/main?tab=readme-ov-file#sortable) This is their work entirely. Localised copy for reference.
 
 Comprehensive Python Cheatsheet
 ===============================
