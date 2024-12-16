@@ -1,12 +1,11 @@
 ## Cheat Sheets
 [Comprehensive Python Cheatsheet](https://github.com/GaJoDev/Python/blob/main/python_cheat_sheet.md)
 
-[Beginners Python Cheatsheet(PDF)](https://github.com/ehmatthes/pcc_3e/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc.pdf)
+[Beginners Python Cheatsheet(PDF)](https://github.com/ehmatthes/pcc_3e/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_git.pdf)
 
-**[11 Python Cheat Sheets Every Python Coder Must Own - Homepage for the Below Bulleted List](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/)**
+**[Python Cheat Sheets Every Python Coder Must Own - Homepage for the Below Bulleted List](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/)**
 - [Python Beginner Cheat Sheet](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)
 - [Python 3 Cheat Sheet](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)
-
 - [Python for Data Science](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PythonForDataScience.pdf)
 - [Python for Data Science (Importing Data)](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Cheat+Sheets/Importing_Data_Python_Cheat_Sheet.pdf)
 - [Python Cheatography Cheat Sheet](https://www.cheatography.com/davechild/cheat-sheets/python/pdf/)
@@ -24,8 +23,8 @@ https://github.com/ehmatthes/pcc_3e/releases/download/v1.0.0/beginners_python_ch
 ## Beginners Python Cheatsheet Git
 
 https://github.com/ehmatthes/pcc_3e/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_git.pdf
-[]()
-## W3 Schools Python Rererence
+[W3 Schools Python Rererence](https://www.w3schools.com/python/default.asp)
+
 
 https://www.w3schools.com/python/default.asp
 []()
