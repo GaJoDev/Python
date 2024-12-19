@@ -1,6 +1,6 @@
 ### *My Notes:*
 
-This is the markdown conversion of the jupyter notebook, this is a readable reference if no access to Jupyter Labs
+This is the markdown conversion of the jupyter notebook, a readable reference if no access to Jupyter Labs
 
 **PROBLEM**
 
