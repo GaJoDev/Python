@@ -1,6 +1,3 @@
-
-
-
 # Introduction to Classes in Python
 
 ## What is a Class?
@@ -265,6 +262,7 @@ class Vehicle(Machine):
 car1 = Vehicle("Toyota Corolla")
 car1.operate()  # Output: The Toyota Corolla is driving.
 ```
+
 ## Encapsulation and Access Control
 
 Encapsulation restricts direct access to some of an object’s components to enforce controlled interaction.
@@ -288,6 +286,7 @@ print(car1.get_make())  # Output: Toyota
 car1.set_make("Honda")
 print(car1.get_make())  # Output: Honda
 ```
+
 ---
 
 **Summary**
@@ -296,7 +295,7 @@ Classes are blueprints for objects.
 
 Objects are instances of classes with unique data.
 
-The __init__ method initializes attributes.
+The **init** method initializes attributes.
 
 Use `self` to refer to the current instance.
 
@@ -318,23 +317,28 @@ In Python, subclasses are used to create a new class that is derived from an exi
 
 Let's explore this concept using a `Vehicle` class and a subclass called `Car`.
 
-#### Step 1: Defining the Parent Class (Vehicle)
+### Step 1: Defining the Parent Class (Vehicle)
+
 We begin by defining a `Vehicle` class, which will serve as the base class for all types of vehicles.
 
 class Vehicle:
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
+def **init**(self, make, model, year):
+self.make = make
+self.model = model
+self.year = year
 
-    def start(self):
-        print(f"The {self.year} {self.make} {self.model} is starting.")
+```Python
+def start(self):
+    print(f"The {self.year} {self.make} {self.model} is starting.")
 
-    def stop(self):
-        print(f"The {self.year} {self.make} {self.model} is stopping.")
+def stop(self):
+    print(f"The {self.year} {self.make} {self.model} is stopping.")
+```
 
-#### Step 2: Creating a Subclass (Car)
+### Step 2: Creating a Subclass (Car)
+
 Next, we create a subclass called `Car`, which inherits from `Vehicle`. The `Car` class can access all the attributes and methods of `Vehicle`, but we can also add unique features or override existing methods.
+
 ```Python
 class Car(Vehicle):
     def __init__(self, make, model, year, doors):
@@ -346,8 +350,11 @@ class Car(Vehicle):
         # Override the start method for the Car subclass
         print(f"The {self.year} {self.make} {self.model} with {self.doors} doors is starting.")
 ```
-#### Step 3: Instantiating Objects from Subclasses
+
+### Step 3: Instantiating Objects from Subclasses
+
 Once the subclass is defined, we can create instances of both the `Vehicle` and `Car` classes.
+
 ```Python
 ## Creating an instance of the Vehicle class
 vehicle = Vehicle("Toyota", "Corolla", 2020)
@@ -359,22 +366,26 @@ car = Car("Honda", "Civic", 2022, 4)
 car.start()      # Outputs: The 2022 Honda Civic with 4 doors is starting.
 car.stop()       # Outputs: The 2022 Honda Civic is stopping.
 ```
-#### Key Points About Subclasses:
+
+### Key Points About Subclasses:
+
 - **Inheritance**: Subclasses inherit the attributes and methods of the parent class, but they can also define their own.
 - **Method Overriding**: Subclasses can override methods from the parent class to provide a more specific implementation.
 - **Calling Parent Methods**: The `super()` function allows us to call the methods of the parent class, enabling us to build on existing functionality.
 
-
-### Special (Magic/Dunder) Methods in Python
+## Special (Magic/Dunder) Methods in Python
 
 Special methods, also known as magic or dunder (double underscore) methods, are predefined methods in Python that allow you to define custom behavior for built-in operations. These methods are surrounded by double underscores (e.g., `__init__`, `__str__`, `__add__`) and are called implicitly when specific operations are performed.
 
-#### Enhancing the `Car` Class with Special Methods
+### Enhancing the `Car` Class with Special Methods
 
 Let's explore some commonly used special methods by enhancing the `Car` class.
 
-#### `__str__` Method
+### `__str__` Method
+
 The `__str__` method defines how an object is represented as a string, such as when using `print()`.
+
+### Example:
 
 ```python
 class Car(Vehicle):
@@ -396,20 +407,21 @@ car = Car("Honda", "Civic", 2022, 4)
 print(car)  # Outputs: 2022 Honda Civic (4 doors)
 ```
 
-#### `__eq__` Method
+### `__eq__` Method
+
 The `__eq__` method is used to define custom equality checks between two objects. For example, two `Car` objects can be considered equal if they have the same make, model, year, and doors.
 
 ```python
     def __eq__(self, other):
         if not isinstance(other, Car):
             return False
-        return (self.make == other.make and 
-                self.model == other.model and 
-                self.year == other.year and 
+        return (self.make == other.make and
+                self.model == other.model and
+                self.year == other.year and
                 self.doors == other.doors)
 ```
 
-Example usage:
+### Example:
 
 ```python
 car1 = Car("Honda", "Civic", 2022, 4)
@@ -420,7 +432,8 @@ print(car1 == car2)  # Outputs: True
 print(car1 == car3)  # Outputs: False
 ```
 
-#### `__repr__` Method
+### `__repr__` Method
+
 The `__repr__` method is intended to provide a developer-friendly representation of the object, often useful for debugging.
 
 ```python
@@ -428,13 +441,14 @@ The `__repr__` method is intended to provide a developer-friendly representation
         return f"Car(make={self.make!r}, model={self.model!r}, year={self.year!r}, doors={self.doors!r})"
 ```
 
-Example usage:
+### Example:
 
 ```python
 print(repr(car))  # Outputs: Car(make='Honda', model='Civic', year=2022, doors=4)
 ```
 
-#### Summary of Common Special Methods
+### Summary of Common Special Methods
+
 - `__init__`: Initializes the object when it's created.
 - `__str__`: Returns a readable string representation of the object.
 - `__repr__`: Returns an unambiguous string representation of the object, useful for debugging.
@@ -443,16 +457,16 @@ print(repr(car))  # Outputs: Car(make='Honda', model='Civic', year=2022, doors=4
 
 By using these special methods, we can make classes more intuitive and user-friendly while tailoring them to specific requirements.
 
-
-### Property Decorators: Getters, Setters, and Deleters
+## Property Decorators: Getters, Setters, and Deleters
 
 In Python, property decorators provide a Pythonic way to define getters, setters, and deleters for class attributes. They enable controlled access to private or protected attributes, ensuring encapsulation and validation when needed.
 
-#### Adding Properties to the `Car` Class
+### Adding Properties to the `Car` Class
 
 Let's enhance the `Car` class by adding properties for an attribute called `price`.
 
-#### `@property` Decorator
+### `@property` Decorator
+
 The `@property` decorator is used to define a getter method for an attribute. It allows you to access the attribute like a regular property while keeping the internal implementation hidden.
 
 ```python
@@ -467,14 +481,15 @@ class Car(Vehicle):
         return self._price
 ```
 
-Example usage:
+### Example:
 
 ```python
 car = Car("Honda", "Civic", 2022, 4, 25000)
 print(car.price)  # Outputs: 25000
 ```
 
-#### `@price.setter` Decorator
+### `@price.setter` Decorator
+
 The `@price.setter` decorator allows you to define a method to set the value of an attribute. This is useful for adding validation or logging changes.
 
 ```python
@@ -485,7 +500,7 @@ The `@price.setter` decorator allows you to define a method to set the value of 
         self._price = value
 ```
 
-Example usage:
+### Example:
 
 ```python
 car.price = 26000
@@ -495,7 +510,8 @@ print(car.price)  # Outputs: 26000
 car.price = -5000  # Raises ValueError: Price cannot be negative.
 ```
 
-#### `@price.deleter` Decorator
+### `@price.deleter` Decorator
+
 The `@price.deleter` decorator allows you to define a method to delete an attribute. This might be useful for cleanup or when removing sensitive data.
 
 ```python
@@ -505,16 +521,16 @@ The `@price.deleter` decorator allows you to define a method to delete an attrib
         del self._price
 ```
 
-Example usage:
+### Example:
 
 ```python
 del car.price  # Outputs: Deleting price...
 ```
 
-#### Summary of Property Decorators
+### Summary of Property Decorators
+
 - `@property`: Defines a getter method for an attribute.
 - `@attribute.setter`: Defines a setter method to modify an attribute's value, with optional validation.
 - `@attribute.deleter`: Defines a deleter method to remove an attribute.
 
 Using property decorators, we can control access to class attributes, ensuring better encapsulation and data integrity while maintaining a clean and intuitive API.
-
