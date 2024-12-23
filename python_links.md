@@ -35,3 +35,4 @@
 ## **Books**
 
 [Python for Everybody - Exploring Data Using Python 3](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf)
+[The Hitchhiker’s Guide to Python - O'Reilly Books](https://docs.python-guide.org/)
