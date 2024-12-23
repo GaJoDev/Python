@@ -1,3 +1,9 @@
+## **Books**
+
+[Python for Everybody - Exploring Data Using Python 3](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf)
+
+[The Hitchhiker’s Guide to Python - O'Reilly Books](https://docs.python-guide.org/)
+
 ## **Cheat Sheets**
 
 [Comprehensive Python Cheatsheet](https://github.com/GaJoDev/Python/blob/main/python_cheat_sheet.md)
@@ -32,7 +38,4 @@
 ## F-Strings
 [Python String Formatting - W3Schools](https://www.w3schools.com/python/python_string_formatting.asp)
 
-## **Books**
 
-[Python for Everybody - Exploring Data Using Python 3](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf)
-[The Hitchhiker’s Guide to Python - O'Reilly Books](https://docs.python-guide.org/)
