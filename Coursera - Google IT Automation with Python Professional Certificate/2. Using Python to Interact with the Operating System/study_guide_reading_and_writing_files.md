@@ -1,5 +1,5 @@
 
-Study guide: Reading and writing files
+## Study guide: Reading and writing files
 
 Opening a file or file-like object to read or write is one of the fundamental steps of a Python programmer. For example, you may want to read a .csv file and convert it to JSON format. Or you may want to select data from a database and write it to an output file.
 Reading and writing files
